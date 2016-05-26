@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C047719EACE53313B94ECB5 /* libPods-ViewLine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 205CCD4A2580B927A4A2063E /* libPods-ViewLine.a */; };
 		8B2726151CF58C2E009DCC61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2726141CF58C2E009DCC61 /* main.m */; };
 		8B2726181CF58C2E009DCC61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2726171CF58C2E009DCC61 /* AppDelegate.m */; };
 		8B27261B1CF58C2E009DCC61 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B27261A1CF58C2E009DCC61 /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		8B2726231CF58C2E009DCC61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2726211CF58C2E009DCC61 /* LaunchScreen.storyboard */; };
 		8B27262E1CF58C2E009DCC61 /* ViewLineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B27262D1CF58C2E009DCC61 /* ViewLineTests.m */; };
 		8B2726391CF58C2E009DCC61 /* ViewLineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2726381CF58C2E009DCC61 /* ViewLineUITests.m */; };
+		8B27264B1CF58E7F009DCC61 /* UIView+AddLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B27264A1CF58E7F009DCC61 /* UIView+AddLine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		205CCD4A2580B927A4A2063E /* libPods-ViewLine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ViewLine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82B770BDD28A7C8017A7C54A /* Pods-ViewLine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewLine.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViewLine/Pods-ViewLine.release.xcconfig"; sourceTree = "<group>"; };
 		8B2726101CF58C2E009DCC61 /* ViewLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B2726141CF58C2E009DCC61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B2726161CF58C2E009DCC61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,9 @@
 		8B2726341CF58C2E009DCC61 /* ViewLineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewLineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B2726381CF58C2E009DCC61 /* ViewLineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewLineUITests.m; sourceTree = "<group>"; };
 		8B27263A1CF58C2E009DCC61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B2726491CF58E7F009DCC61 /* UIView+AddLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AddLine.h"; sourceTree = "<group>"; };
+		8B27264A1CF58E7F009DCC61 /* UIView+AddLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AddLine.m"; sourceTree = "<group>"; };
+		EEA7B3294A615DC70820697F /* Pods-ViewLine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewLine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViewLine/Pods-ViewLine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C047719EACE53313B94ECB5 /* libPods-ViewLine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FA4DFB7CDDA21C699262B14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEA7B3294A615DC70820697F /* Pods-ViewLine.debug.xcconfig */,
+				82B770BDD28A7C8017A7C54A /* Pods-ViewLine.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5C93175F353939DBFDB74C9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				205CCD4A2580B927A4A2063E /* libPods-ViewLine.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8B2726071CF58C2D009DCC61 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 				8B27262C1CF58C2E009DCC61 /* ViewLineTests */,
 				8B2726371CF58C2E009DCC61 /* ViewLineUITests */,
 				8B2726111CF58C2E009DCC61 /* Products */,
+				3FA4DFB7CDDA21C699262B14 /* Pods */,
+				5C93175F353939DBFDB74C9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +137,8 @@
 				8B2726211CF58C2E009DCC61 /* LaunchScreen.storyboard */,
 				8B2726241CF58C2E009DCC61 /* Info.plist */,
 				8B2726131CF58C2E009DCC61 /* Supporting Files */,
+				8B2726491CF58E7F009DCC61 /* UIView+AddLine.h */,
+				8B27264A1CF58E7F009DCC61 /* UIView+AddLine.m */,
 			);
 			path = ViewLine;
 			sourceTree = "<group>";
@@ -147,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B27263D1CF58C2E009DCC61 /* Build configuration list for PBXNativeTarget "ViewLine" */;
 			buildPhases = (
+				66C02B916A0DA68549EE3161 /* Check Pods Manifest.lock */,
 				8B27260C1CF58C2E009DCC61 /* Sources */,
 				8B27260D1CF58C2E009DCC61 /* Frameworks */,
 				8B27260E1CF58C2E009DCC61 /* Resources */,
+				89BCEF3432DE64110DD719A3 /* Embed Pods Frameworks */,
+				C72E2A4759FDAD1D87A411B0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,11 +297,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		66C02B916A0DA68549EE3161 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		89BCEF3432DE64110DD719A3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViewLine/Pods-ViewLine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C72E2A4759FDAD1D87A411B0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViewLine/Pods-ViewLine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8B27260C1CF58C2E009DCC61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B27264B1CF58E7F009DCC61 /* UIView+AddLine.m in Sources */,
 				8B27261B1CF58C2E009DCC61 /* ViewController.m in Sources */,
 				8B2726181CF58C2E009DCC61 /* AppDelegate.m in Sources */,
 				8B2726151CF58C2E009DCC61 /* main.m in Sources */,
@@ -411,6 +492,7 @@
 		};
 		8B27263E1CF58C2E009DCC61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEA7B3294A615DC70820697F /* Pods-ViewLine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ViewLine/Info.plist;
@@ -422,6 +504,7 @@
 		};
 		8B27263F1CF58C2E009DCC61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82B770BDD28A7C8017A7C54A /* Pods-ViewLine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ViewLine/Info.plist;
@@ -498,6 +581,7 @@
 				8B27263F1CF58C2E009DCC61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B2726401CF58C2E009DCC61 /* Build configuration list for PBXNativeTarget "ViewLineTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +590,7 @@
 				8B2726421CF58C2E009DCC61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B2726431CF58C2E009DCC61 /* Build configuration list for PBXNativeTarget "ViewLineUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +599,7 @@
 				8B2726451CF58C2E009DCC61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
